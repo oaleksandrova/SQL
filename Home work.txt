@@ -1,0 +1,42 @@
+
+
+Задание 1
+
+CREATE TABLE `continents`.`continents` ( `id` INT(2) NOT NULL AUTO_INCREMENT , `name`
+INSERT INTO continents (name, north_part, south_part, square) VALUES ('eurasia', 'yes', 'no', 55)
+SELECT * FROM `continents`
+INSERT INTO continents (name, north_part, south_part, square) VALUES ('north america', 'yes', 'no', 25), ('south america', 'yes', 'yes', 18), ('australia', 'no', 'yes', 8), ('africa', 'yes', 'yes', 30), ('antarctica', 'no', 'yes', 14)
+
+
+Задание 2
+SELECT id, name, square FROM continents
+
+Задание 3
+SELECT id, name FROM continents
+WHERE name <> 'australia'
+AND name <> 'antarctica';
+
+Задание 4
+SELECT id, name FROM continents  
+WHERE name = 'south america'
+OR name = 'africa';
+
+Задание 5
+SELECT id, name, square FROM continents
+WHERE square <= 25;
+
+Задание 6
+SELECT name FROM continents
+WHERE name <> 'antarctica';
+
+Задание 7
+SELECT id, name, square FROM continents
+WHERE square > 40
+OR square < 10;
+
+Задание 8
+SELECT * FROM continents
+WHERE name = 'north america'
+OR name = 'south america'
+OR name = 'australia'
+OR name = 'antarctica';
